@@ -1,7 +1,7 @@
 var myChart = echarts.init($('#main')[0]);
 echarts.util.mapData.params.params.石家庄市 = {
     getGeoJson: function (callback) {
-        $.getJSON('./shijiazhuang.json', function (data) {
+        $.getJSON('./json/shijiazhuang.json', function (data) {
             // 压缩后的地图数据必须使用 decode 函数转换
             callback(echarts.util.mapData.params.decode(data));
         });
