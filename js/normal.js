@@ -1,5 +1,5 @@
 var myChart = echarts.init($('#main')[0]);
-var option1 = {
+var option = {
     backgroundColor: '#eee',
     color: [
         'rgba(255, 255, 255, 1)',
@@ -43,13 +43,13 @@ var option1 = {
     },
     series: [
         {
-            name: '河北',
+            name: '中国',
             type: 'map',
             //是否可以拖拽，放大缩小。均可以true|均不可以false|仅放大缩小scale|仅拖动move
             roam: 'true',
             hoverable: false,
             //背景地图类型
-            mapType: '河北',
+            mapType: 'china',
             itemStyle: {
                 normal: {
                     label: {
@@ -93,5 +93,5 @@ var option1 = {
             ]
         }]
 };
-myChart.setOption(option1);
+myChart.setOption(option);
 window.onresize = myChart.resize;
