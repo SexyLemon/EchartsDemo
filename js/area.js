@@ -1,8 +1,9 @@
 var myChart = echarts.init($('#main')[0]);
 option = {
+    backgroundColor:'#f5f5f5',
     title: {
-        text: 'iphone销量',
-        subtext: '纯属虚构',
+        text: '工程进度监控图',
+        subtext: '在建阶段工程项目数量',
         x: 'center'
     },
     tooltip: {
@@ -10,9 +11,10 @@ option = {
     },
     dataRange: {
         min: 0,
-        max: 2500,
+        max: 1000,
         x: 'left',
         y: 'bottom',
+        color: ['#f44336', '#fbc9c5'],
         text: ['高', '低'],           // 文本，默认为数值文本
         calculable: true
     },
@@ -30,7 +32,7 @@ option = {
     },
     series: [
         {
-            name: 'iphone3',
+            name: '项目数',
             type: 'map',
             mapType: 'china',
             roam: true,

@@ -3,8 +3,8 @@ option = {
     backgroundColor: '#0f9ad1',
     color: ['gold', 'aqua', 'lime'],
     title: {
-        text: '模拟迁徙',
-        subtext: '数据纯属虚构',
+        text: '资金分配监控图',
+        subtext: '资金分配情况',
         x: 'center',
         textStyle: {
             color: '#fff'
@@ -47,7 +47,7 @@ option = {
                     label:{
                         show:true,
                         textStyle:{
-                            color:'#ccc'
+                            color:'#fff'
                         }
                     },
                     borderColor: 'rgba(100,149,237,1)',
@@ -177,7 +177,7 @@ option = {
             }
         },
         {
-            name: '北京 Top10',
+            name: '北京',
             type: 'map',
             mapType: 'china',
             data: [],
