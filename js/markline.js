@@ -28,7 +28,7 @@ option = {
     },
     dataRange: {
         min: 0,
-        max: 2500,
+        max: 100,
         calculable: true,
         color: ['#ff3333', 'orange', 'yellow', 'lime', 'aqua'],
         textStyle: {
@@ -44,6 +44,12 @@ option = {
             mapType: 'china',
             itemStyle: {
                 normal: {
+                    label:{
+                        show:true,
+                        textStyle:{
+                            color:'#ccc'
+                        }
+                    },
                     borderColor: 'rgba(100,149,237,1)',
                     borderWidth: 0.5,
                     areaStyle: {
@@ -175,6 +181,15 @@ option = {
             type: 'map',
             mapType: 'china',
             data: [],
+            itemStyle: {
+                normal: {
+                    borderColor: 'rgba(100,149,237,1)',
+                    borderWidth: 0.5,
+                    areaStyle: {
+                        color: '#004882'
+                    }
+                }
+            },
             markLine: {
                 smooth: true,
                 effect: {
@@ -186,6 +201,10 @@ option = {
                 },
                 itemStyle: {
                     normal: {
+                        label:{
+                            show:true,
+                            formatter:'{c}'
+                        },
                         borderWidth: 1,
                         lineStyle: {
                             type: 'solid',
